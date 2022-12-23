@@ -10,19 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
       rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4f3b355ec.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="banner">
-        <img id="logo" src="assets/images/logo/ohmyfood.png" alt="OhMyFood logo">
-        <div class="banner-background">
-          <p>Paris, Bellevile</p>
+        <div class="banner__background">
+          <img id="logo" src="assets/images/logo/ohmyfood.png" alt="OhMyFood logo">
+        </div>
+        <div class="banner__geoloc">
+          <i class="fa-solid fa-location-dot"></i><p>Paris, Bellevile</p>
         </div>
       </div>
-      <div class="home-introduction">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-        <a href="">Explorez nos restaurants</a>
+      <div class="explore-restaurant">
+        <h1 class="explore-restaurant__title">Réservez le menu qui <span>vous convient</span></h1>
+        <p class="explore-restaurant__paraph">Découvrez des restaurants d'exception <span>sélectionnés par nos soins</span></p>
+        <a class="explore-restaurant__link" href="">Explorez nos restaurants</a>
       </div>
     </header>
     <main>
