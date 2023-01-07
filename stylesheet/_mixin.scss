@@ -1,7 +1,7 @@
-@mixin background-color($colour) {
-  background-color: $colour
-}
-
 @mixin background-gradient {
   background: linear-gradient(#e571db, #d86cdb, #a65cdc)
+}
+
+@mixin box-shadow {
+  box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99)
 }
