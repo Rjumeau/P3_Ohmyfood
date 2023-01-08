@@ -1,154 +1,178 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif; }
 
-@media screen and (max-width: 769px) {
-  .banner {
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .banner .banner__background {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .banner .banner__background {
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      box-shadow: 0px 15px 10px -15px #111; }
-      .banner .banner__background #logo {
-        width: 50%; }
-    .banner .banner__geoloc {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background-color: #eaeaea; }
-    .banner i {
-      margin-top: 15px;
-      margin-right: 15px; }
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 15px 10px -15px #111; }
+    .banner .banner__background #logo {
+      width: 50%; }
+  .banner .banner__geoloc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea; }
+  .banner i {
+    margin-top: 15px;
+    margin-right: 15px; }
 
-  .explore-restaurant {
+.explore-restaurant {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f7f7f7; }
+  .explore-restaurant .explore-restaurant__title {
+    font-size: 20px;
+    inline-size: 193px; }
+  .explore-restaurant span {
+    padding: 20px; }
+  .explore-restaurant .explore-restaurant__paraph {
+    inline-size: 274px; }
+  .explore-restaurant .explore-restaurant__link {
+    text-decoration: none;
+    width: 55%;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(#e571db, #d86cdb, #a65cdc);
+    border-radius: 25px;
+    text-align: center; }
+
+.step-title {
+  margin-left: 25px; }
+
+.working-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.working-step {
+  box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99);
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 10px 10px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 80%; }
+  .working-step .working-step__number {
+    width: 20px;
+    height: 20px;
+    background-color: #9356dc;
+    border-radius: 50%;
+    color: white;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #f7f7f7; }
-    .explore-restaurant .explore-restaurant__title {
-      font-size: 20px;
-      inline-size: 193px; }
-    .explore-restaurant span {
-      padding: 20px; }
-    .explore-restaurant .explore-restaurant__paraph {
-      inline-size: 274px; }
-    .explore-restaurant .explore-restaurant__link {
-      text-decoration: none;
-      width: 55%;
-      padding: 15px;
-      color: white;
-      background: linear-gradient(#e571db, #d86cdb, #a65cdc);
-      border-radius: 25px;
-      text-align: center; }
-
-  .step-title {
-    margin-left: 25px; }
-
-  .working-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    position: absolute;
+    left: -10px; }
+  .working-step .working-step__text {
+    font-weight: 700;
+    margin-left: 15px; }
+    .working-step .working-step__text i {
+      margin-right: 20px;
+      color: #787878; }
 
-  .working-step {
-    box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99);
-    border-radius: 20px;
-    margin: 15px 0;
-    padding: 10px 10px;
-    background-color: #f7f7f7;
+.restaurants-container {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+  margin-top: 15px; }
+  .restaurants-container h2 {
+    text-align: left; }
+
+.restaurant-card {
+  box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  text-decoration: none;
+  color: #000; }
+  .restaurant-card .restaurant-card__new_tag {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px 10px;
+    background-color: #99e2d0;
+    color: #278870;
+    font-size: 14px; }
+  .restaurant-card .restaurant-card__picture {
+    position: relative; }
+    .restaurant-card .restaurant-card__picture img {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0; }
+  .restaurant-card .restaurant-card__infos {
+    padding: 20px;
     display: flex;
     align-items: flex-start;
-    position: relative;
-    width: 80%; }
-    .working-step .working-step__number {
-      width: 20px;
-      height: 20px;
-      background-color: #9356dc;
-      border-radius: 50%;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      left: -10px; }
-    .working-step .working-step__text {
-      font-weight: 700;
-      margin-left: 15px; }
-      .working-step .working-step__text i {
-        margin-right: 20px;
-        color: #787878; }
+    justify-content: space-between; }
+    .restaurant-card .restaurant-card__infos h3 {
+      margin: 0; }
+    .restaurant-card .restaurant-card__infos p {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 2px 0; }
+
+.button-like_empty {
+  font-size: 28px; }
+
+footer {
+  width: 94%;
+  padding: 15px 3%;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  height: 180px;
+  margin-top: 30px; }
+  footer a {
+    color: inherit;
+    text-decoration: none; }
+    footer a i {
+      margin-right: 10px; }
+
+.footer-title {
+  font-family: "Shrikhand"; }
+
+@media screen and (min-width: 769px) {
+  .explore-restaurant {
+    justify-content: space-around;
+    height: 250px; }
+    .explore-restaurant .explore-restaurant__title {
+      width: 100% !important;
+      font-size: 24px;
+      text-align: center; }
+    .explore-restaurant span {
+      padding: 0; }
+    .explore-restaurant .explore-restaurant__paraph {
+      width: 100% !important;
+      font-size: 20px;
+      text-align: center;
+      color: #717171; }
+    .explore-restaurant .explore-restaurant__link {
+      width: 40%; }
 
   .restaurants-container {
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 20px; }
-    .restaurants-container h2 {
-      text-align: left; }
+    padding: 0 20px; }
 
-  .restaurant-card {
-    box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 100%;
-    text-decoration: none;
-    color: #000; }
-    .restaurant-card .restaurant-card__new_tag {
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      padding: 5px 10px;
-      background-color: #99e2d0;
-      color: #278870;
-      font-size: 14px; }
-    .restaurant-card .restaurant-card__picture {
-      position: relative; }
-      .restaurant-card .restaurant-card__picture img {
-        height: 160px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; }
-    .restaurant-card .restaurant-card__infos {
-      padding: 20px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between; }
-      .restaurant-card .restaurant-card__infos h3 {
-        margin: 0; }
-      .restaurant-card .restaurant-card__infos p {
-        font-size: 16px;
-        font-weight: 300;
-        margin: 2px 0; }
-
-  .button-like_empty {
-    font-size: 28px; }
-
-  footer {
-    width: 94%;
-    padding: 15px 3%;
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #fff;
-    height: 180px;
-    margin-top: 30px; }
-    footer a {
-      color: inherit;
-      text-decoration: none; }
-      footer a i {
-        margin-right: 10px; }
-
-  .footer-title {
-    font-family: "Shrikhand"; } }
+  .working-step {
+    justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
