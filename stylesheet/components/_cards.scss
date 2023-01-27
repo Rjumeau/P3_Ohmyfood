@@ -1,0 +1,81 @@
+.restaurant-card {
+  @include box-shadow;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+
+  .restaurant-card__new_tag {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px 10px;
+    background-color: $emerald;
+    color: #278870;
+    font-size: 14px;
+  }
+
+  .restaurant-card__picture {
+    position: relative;
+
+    img {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .restaurant-card__infos {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 2px 0;
+    }
+  }
+}
+
+.meal-card {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+
+
+  .meal-card__title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    margin-bottom: -5px;
+  }
+
+  .meal-card__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    p {
+      font-weight: 300;
+    }
+  }
+}
+
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}

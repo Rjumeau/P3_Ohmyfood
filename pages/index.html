@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>OhMyFood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="stylesheet" href="../stylesheet/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
       rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c4f3b355ec.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <div class="banner">
-        <div class="banner__background">
-          <img id="logo" src="assets/images/logo/ohmyfood.png" alt="OhMyFood logo">
-        </div>
-        <div class="banner__geoloc">
-          <i class="fa-solid fa-location-dot"></i><p>Paris, Bellevile</p>
-        </div>
-      </div>
-      <div class="explore-restaurant">
-        <h1 class="explore-restaurant__title">Réservez le menu qui <span>vous convient</span></h1>
-        <p class="explore-restaurant__paraph">Découvrez des restaurants d'exception <span>sélectionnés par nos soins</span></p>
-        <a class="explore-restaurant__link" href="">Explorez nos restaurants</a>
-      </div>
+      <img src="../assets/images/logo/ohmyfood.png" alt="ohmyfood logo">
     </header>
+    <div class="restaurant-geoloc">
+      <i class="fa-solid fa-location-dot"></i><p>Paris, Bellevile</p>
+    </div>
+    <section class="explore-restaurant">
+      <h1 class="explore-restaurant__title">Réservez le menu qui <span>vous convient</span></h1>
+      <p class="explore-restaurant__paraph">Découvrez des restaurants d'exception <span>sélectionnés par nos soins</span></p>
+      <a class="explore-button" href="">Explorez nos restaurants</a>
+    </section>
     <main>
       <h2 class="step-title">Fonctionnement</h2>
       <section class="working-container">
@@ -48,7 +43,7 @@
         <h2>Restaurants</h2>
         <a href="" class="restaurant-card">
           <div class="restaurant-card__picture">
-            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
             <p class="restaurant-card__new_tag">Nouveau</p>
           </div>
           <div class="restaurant-card__infos">
@@ -63,7 +58,7 @@
         </a>
         <a href="" class="restaurant-card">
           <div class="restaurant-card__picture">
-            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+            <img src="../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
             <p class="restaurant-card__new_tag">Nouveau</p>
           </div>
           <div class="restaurant-card__infos">
@@ -78,8 +73,7 @@
         </a>
         <a href="" class="restaurant-card">
           <div class="restaurant-card__picture">
-            <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-            <p class="restaurant-card__new_tag">Nouveau</p>
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
           </div>
           <div class="restaurant-card__infos">
             <div>
@@ -93,8 +87,7 @@
         </a>
         <a href="" class="restaurant-card">
           <div class="restaurant-card__picture">
-            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-            <p class="restaurant-card__new_tag">Nouveau</p>
+            <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
           </div>
           <div class="restaurant-card__infos">
             <div>
@@ -108,12 +101,13 @@
         </a>
       </section>
     </main>
-    <footer>
+    <footer class="home-footer">
       <h3 class="footer-title">OhMyFood</h3>
       <a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
       <a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
       <a href="">Mentions légales</a>
       <a href="mailto:contact@ohmyfood.fr">Contact</a>
     </footer>
+    <script src="https://kit.fontawesome.com/c4f3b355ec.js" crossorigin="anonymous"></script>
   </body>
 </html>

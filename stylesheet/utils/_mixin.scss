@@ -1,0 +1,29 @@
+@mixin background-gradient {
+  background: linear-gradient(#e571db, #d86cdb, #a65cdc)
+}
+
+@mixin box-shadow {
+  box-shadow: 4px 4px 12px rgba(177, 177, 177, 0.99)
+}
+
+@mixin purple-button {
+  text-decoration: none;
+  width: 55%;
+  padding: 15px;
+  color: white;
+  @include background-gradient;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@mixin footer {
+  width: 94%;
+  padding: 15px 3%;
+  background-color: $black-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  height: 180px;
+}

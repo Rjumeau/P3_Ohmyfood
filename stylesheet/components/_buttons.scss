@@ -1,0 +1,11 @@
+.button-like__empty {
+  font-size: 28px;
+}
+
+.explore-button {
+  @include purple-button;
+}
+
+.order-button {
+  @include purple-button;
+}
