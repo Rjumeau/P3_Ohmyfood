@@ -1,5 +1,36 @@
-.button-like__empty {
-  font-size: 28px;
+.button-like {
+  width: 50px;
+  height: 100%;
+  top: 0;
+  position: relative;
+
+
+  i {
+    font-size: 28px;
+    transition: opacity ease-in 300ms;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .button-like__full {
+    color: $primary-color;
+    opacity: 0;
+    display: none;
+  }
+
+  .button-like__empty {
+    opacity: 1;
+  }
+
+  .button-like:hover .button-like__full {
+    display: block;
+    opacity: 1;
+  }
+
+  .button-like:hover .button-like__empty {
+    opacity: 0;
+  }
 }
 
 .explore-button {
