@@ -1,7 +1,7 @@
 .button-like {
   width: 50px;
   height: 100%;
-  top: 0;
+  top: 17px;
   position: relative;
 
 
@@ -13,24 +13,25 @@
     right: 0;
   }
 
-  .button-like__full {
+  &__full {
     color: $primary-color;
     opacity: 0;
     display: none;
   }
 
-  .button-like__empty {
+  &__empty {
     opacity: 1;
   }
 
-  .button-like:hover .button-like__full {
+  &:hover &__full {
     display: block;
     opacity: 1;
   }
 
-  .button-like:hover .button-like__empty {
+  &:hover &__empty {
     opacity: 0;
   }
+
 }
 
 .explore-button {

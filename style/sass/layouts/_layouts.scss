@@ -1,9 +1,8 @@
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  max-width: 100vw;
   font-family: $font-text;
 }
 
@@ -23,7 +22,7 @@ header {
   top: 0;
 
   img {
-    width: 50%;
+    width: 30%;
   }
 
   a {
