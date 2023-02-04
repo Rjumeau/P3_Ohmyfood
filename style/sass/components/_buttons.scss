@@ -34,10 +34,10 @@
 
 }
 
-.explore-button {
+.primary-button {
   @include purple-button;
 }
 
-.order-button {
-  @include purple-button;
+.primary-button:hover {
+  @include purple-button-hover;
 }

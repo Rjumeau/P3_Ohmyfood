@@ -17,10 +17,16 @@
   margin-bottom: 30px;
 }
 
+@mixin purple-button-hover {
+  background: linear-gradient(175deg, lighten($secondary-color, 5), lighten($primary-color, 5) 95%);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 @mixin text-overflow-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 @mixin footer {
   width: 94%;
