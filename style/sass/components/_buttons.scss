@@ -14,9 +14,13 @@
   }
 
   &__full {
-    color: $primary-color;
     opacity: 0;
     display: none;
+    background: $purple-linear-gradient;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &__empty {
@@ -24,7 +28,7 @@
   }
 
   &:hover &__full {
-    display: block;
+    display: initial;
     opacity: 1;
   }
 
