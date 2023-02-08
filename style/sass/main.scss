@@ -1,9 +1,14 @@
+// Utils
 @import "./utils/mixin.scss";
 @import "./utils/colour.scss";
 @import "./utils/fonts.scss";
 @import "./utils/keyframes.scss";
+
+// Pages
 @import "./pages/restaurants.scss";
 @import "./pages/home.scss";
+
+// Components
 @import "./components/buttons.scss";
 @import "./components/cards.scss";
 @import "./components/loader.scss";
