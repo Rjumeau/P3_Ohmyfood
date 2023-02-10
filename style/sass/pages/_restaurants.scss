@@ -54,3 +54,15 @@
     margin: 15px 0;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .container {
+    z-index: initial;
+    position: relative;
+  }
+
+  .restaurant-menu {
+    z-index: initial;
+    position: relative;
+  }
+}

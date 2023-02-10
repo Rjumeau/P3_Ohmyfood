@@ -45,3 +45,9 @@
 .primary-button:hover {
   @include purple-button-hover;
 }
+
+@media screen and (min-width: 769px) {
+  .primary-button {
+    width: 25%;
+  }
+}
